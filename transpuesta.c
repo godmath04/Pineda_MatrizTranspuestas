@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
         for (int j = 0; j < columna; j++)
         {
             // A cada elemento de la matriz se asigna el cero
-            Matriz[i][j] = rand() %101 ;
+            Matriz[i][j] = rand() %101 ; // Si le sumamos 1 iniciaria desde 1 y no es lo que se requiere
             // Aprovechar el bucle para la impresión
             printf("%4d |", Matriz[i][j]);
         }
@@ -33,8 +33,8 @@ int main(int argc, char const *argv[])
     }
 
     printf("\n");
-    // Matriz transpuesta
-    int MatrizTranspuesta[columna][fila];
+    // Matriz transpuesta - definida
+    int MatrizTranspuesta[columna][fila]; 
     for (int i = 0; i < columna; i++)
     {
         for (int j = 0; j < fila; j++)
