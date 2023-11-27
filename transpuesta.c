@@ -32,5 +32,19 @@ int main(int argc, char const *argv[])
         printf("\n");
     }
 
+    printf("\n");
+    // Matriz transpuesta
+    int MatrizTranspuesta[columna][fila];
+    for (int i = 0; i < columna; i++)
+    {
+        for (int j = 0; j < fila; j++)
+        {
+            MatrizTranspuesta[i][j] = Matriz[j][i];
+               // Bucle impresión
+            printf("%4d |", MatrizTranspuesta[i][j]);
+        }
+        printf("\n");
+    }
+
     return 0;
 }
