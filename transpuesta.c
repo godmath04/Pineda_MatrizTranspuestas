@@ -24,7 +24,7 @@ int main(int argc, char const *argv[])
     {
         for (int j = 0; j < columna; j++)
         {
-            // A cada elemento de la matriz se asigna el cero
+            // A cada elemento de la matriz se asigna un número aleatorio
             Matriz[i][j] = rand() %101 ; // Si le sumamos 1 iniciaria desde 1 y no es lo que se requiere
             // Aprovechar el bucle para la impresión
             printf("%4d |", Matriz[i][j]);
